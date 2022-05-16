@@ -73,6 +73,7 @@ sed -i "s/hostname='.*'/hostname='Phicomm-K3'/g" package/base-files/files/bin/co
 # sed -i 's/services/vpn/g' package/feeds/liwenwu1058/luci-app-bypass/luasrc/controller/*.lua
 # sed -i 's/services/vpn/g' package/feeds/liwenwu1058/luci-app-bypass/luasrc/model/cbi/bypass/*.lua
 # sed -i 's/services/vpn/g' package/feeds/liwenwu1058/luci-app-bypass/luasrc/view/bypass/*.htm
+echo 'https://static.adguard.com/adguardhome/release/AdGuardHome_linux_armv5.tar.gz' > feeds/liwenwu1058/luci-app-adguardhome/root/usr/share/AdGuardHome/links.txt
 
 
 sed -i '/option Interface/d'  package/network/services/dropbear/files/dropbear.config
