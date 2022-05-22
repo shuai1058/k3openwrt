@@ -45,9 +45,6 @@ sed -i 's/$(USB3_PACKAGES) k3screenctrl/luci-app-k3screenctrl/g' target/linux/bc
 echo '=========Remove other devices of bcm53xx OK!========='
 
 
-echo '移除主页跑分信息显示'
-sed -i 's/ <%=luci.sys.exec("cat \/etc\/bench.log") or ""%>//g' package/lean/autocore/files/arm/index.htm
-echo '=========Remove benchmark display in index OK!========='
 
 echo '移除主页日志打印'
 sed -i '/console.log(mainNodeName);/d' package/lean/luci-theme-argon/htdocs/luci-static/argon/js/script.js
