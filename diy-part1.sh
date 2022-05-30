@@ -26,5 +26,5 @@ rm -rf ./package/lean/k3screenctrl
 rm -rf ./package/lean/autocore
                
 sed -i "1isrc-git liwenwu1058 https://github.com/liwenwu1058/openwrt-packages" feeds.conf.default
-sed -i "2isrc-git passwall https://github.com/xiaorouji/openwrt-passwall" feeds.conf.default
-sed -i "3isrc-git helloworld https://github.com/fw876/helloworld\n" feeds.conf.default
+#sed -i "2isrc-git passwall https://github.com/xiaorouji/openwrt-passwall" feeds.conf.default
+#sed -i "3isrc-git helloworld https://github.com/fw876/helloworld\n" feeds.conf.default
