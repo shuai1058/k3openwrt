@@ -26,7 +26,7 @@ env:
 
   REPO_URL: https://github.com/shuai1058/lede
 
-  REPO_BRANCH: k3
+  REPO_BRANCH: master
 
   FEEDS_CONF: feeds.conf.default
 
