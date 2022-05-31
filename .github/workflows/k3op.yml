@@ -24,7 +24,7 @@ on:
 
 env:
 
-  REPO_URL: https://github.com/shuai1058/lede
+  REPO_URL: https://github.com/shuai1058/openfros
 
   REPO_BRANCH: master
 
