@@ -26,5 +26,11 @@ rm -rf ./package/lean/k3screenctrl
 rm -rf ./package/lean/autocore
                
 sed -i "1isrc-git shuai1058 https://github.com/shuai1058/openwrt-packages" feeds.conf.default
-#sed -i "2isrc-git passwall https://github.com/xiaorouji/openwrt-passwall" feeds.conf.default
-#sed -i "3isrc-git helloworld https://github.com/fw876/helloworld\n" feeds.conf.default
+# sed -i "2isrc-git passwall https://github.com/xiaorouji/openwrt-passwall" feeds.conf.default
+# sed -i "3isrc-git helloworld https://github.com/fw876/helloworld\n" feeds.conf.default
+echo '移除bcm53xx中的其他机型'
+sed -i '421,453d' target/linux/bcm53xx/image/Makefile
+sed -i '140,412d' target/linux/bcm53xx/image/Makefile
+# sed -i 's/$(USB3_PACKAGES) k3screenctrl/luci-app-k3screenctrl/g' target/linux/bcm53xx/image/Makefile
+# sed -n '140,146p' target/linux/bcm53xx/image/Makefile
+echo '=========Remove other devices of bcm53xx OK!========='
