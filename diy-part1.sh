@@ -34,3 +34,9 @@ sed -i '140,412d' target/linux/bcm53xx/image/Makefile
 # sed -i 's/$(USB3_PACKAGES) k3screenctrl/luci-app-k3screenctrl/g' target/linux/bcm53xx/image/Makefile
 # sed -n '140,146p' target/linux/bcm53xx/image/Makefile
 echo '=========Remove other devices of bcm53xx OK!========='
+
+echo '添加jerrykuku的argon-mod主题'
+rm -rf package/lean/luci-theme-argon  
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
+echo '=========Add argon-mod OK!========='
+
